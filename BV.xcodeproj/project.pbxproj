@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		459AD9F1219BF9DC00CE6226 /* BV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459AD9E7219BF9DC00CE6226 /* BV.framework */; };
+		459AD9F6219BF9DC00CE6226 /* BVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459AD9F5219BF9DC00CE6226 /* BVTests.swift */; };
+		459AD9F8219BF9DC00CE6226 /* BV.h in Headers */ = {isa = PBXBuildFile; fileRef = 459AD9EA219BF9DC00CE6226 /* BV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459ADA42219BFAEA00CE6226 /* AudioEncoderBV.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA0A219BFAEA00CE6226 /* AudioEncoderBV.hpp */; };
+		459ADA43219BFAEA00CE6226 /* bv32strct.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA0C219BFAEA00CE6226 /* bv32strct.h */; };
+		459ADA44219BFAEA00CE6226 /* excdec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA0D219BFAEA00CE6226 /* excdec.cpp */; };
+		459ADA45219BFAEA00CE6226 /* lspdec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA0E219BFAEA00CE6226 /* lspdec.cpp */; };
+		459ADA46219BFAEA00CE6226 /* ptquan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA0F219BFAEA00CE6226 /* ptquan.cpp */; };
+		459ADA47219BFAEA00CE6226 /* bvcommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA10219BFAEA00CE6226 /* bvcommon.h */; };
+		459ADA48219BFAEA00CE6226 /* g192.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA11219BFAEA00CE6226 /* g192.h */; };
+		459ADA49219BFAEA00CE6226 /* encoder.cpp.bak in Resources */ = {isa = PBXBuildFile; fileRef = 459ADA12219BFAEA00CE6226 /* encoder.cpp.bak */; };
+		459ADA4A219BFAEA00CE6226 /* levelest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA13219BFAEA00CE6226 /* levelest.cpp */; };
+		459ADA4B219BFAEA00CE6226 /* bitpack.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA14219BFAEA00CE6226 /* bitpack.h */; };
+		459ADA4C219BFAEA00CE6226 /* coarptch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA15219BFAEA00CE6226 /* coarptch.cpp */; };
+		459ADA4D219BFAEA00CE6226 /* memutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA16219BFAEA00CE6226 /* memutil.h */; };
+		459ADA4E219BFAEA00CE6226 /* gaindec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA17219BFAEA00CE6226 /* gaindec.cpp */; };
+		459ADA4F219BFAEA00CE6226 /* tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA18219BFAEA00CE6226 /* tables.cpp */; };
+		459ADA50219BFAEA00CE6226 /* bv32cnst.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA19219BFAEA00CE6226 /* bv32cnst.h */; };
+		459ADA51219BFAEA00CE6226 /* gainquan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA1A219BFAEA00CE6226 /* gainquan.cpp */; };
+		459ADA52219BFAEA00CE6226 /* bv32externs.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA1B219BFAEA00CE6226 /* bv32externs.h */; };
+		459ADA53219BFAEA00CE6226 /* bitpack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA1C219BFAEA00CE6226 /* bitpack.cpp */; };
+		459ADA54219BFAEA00CE6226 /* plc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA1D219BFAEA00CE6226 /* plc.cpp */; };
+		459ADA55219BFAEA00CE6226 /* g192.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA1E219BFAEA00CE6226 /* g192.cpp */; };
+		459ADA56219BFAEA00CE6226 /* basop32.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA1F219BFAEA00CE6226 /* basop32.h */; };
+		459ADA57219BFAEA00CE6226 /* lspquan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA20219BFAEA00CE6226 /* lspquan.cpp */; };
+		459ADA58219BFAEA00CE6226 /* excquan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA21219BFAEA00CE6226 /* excquan.cpp */; };
+		459ADA59219BFAEA00CE6226 /* decoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA22219BFAEA00CE6226 /* decoder.cpp */; };
+		459ADA5A219BFAEA00CE6226 /* preproc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA23219BFAEA00CE6226 /* preproc.cpp */; };
+		459ADA5B219BFAEA00CE6226 /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA24219BFAEA00CE6226 /* utility.h */; };
+		459ADA5C219BFAEA00CE6226 /* mathutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA25219BFAEA00CE6226 /* mathutil.h */; };
+		459ADA5D219BFAEA00CE6226 /* encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA26219BFAEA00CE6226 /* encoder.cpp */; };
+		459ADA5E219BFAEA00CE6226 /* fineptch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA27219BFAEA00CE6226 /* fineptch.cpp */; };
+		459ADA5F219BFAEA00CE6226 /* bv32.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA28219BFAEA00CE6226 /* bv32.h */; };
+		459ADA60219BFAEA00CE6226 /* typedef.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA29219BFAEA00CE6226 /* typedef.h */; };
+		459ADA61219BFAEA00CE6226 /* a2lsp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA2B219BFAEA00CE6226 /* a2lsp.cpp */; };
+		459ADA62219BFAEA00CE6226 /* bvcommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA2C219BFAEA00CE6226 /* bvcommon.h */; };
+		459ADA63219BFAEA00CE6226 /* basop32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA2D219BFAEA00CE6226 /* basop32.cpp */; };
+		459ADA64219BFAEA00CE6226 /* vqdecode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA2E219BFAEA00CE6226 /* vqdecode.cpp */; };
+		459ADA65219BFAEA00CE6226 /* memutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA2F219BFAEA00CE6226 /* memutil.h */; };
+		459ADA66219BFAEA00CE6226 /* mathtables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA30219BFAEA00CE6226 /* mathtables.cpp */; };
+		459ADA67219BFAEA00CE6226 /* mathutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA31219BFAEA00CE6226 /* mathutil.cpp */; };
+		459ADA68219BFAEA00CE6226 /* allzero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA32219BFAEA00CE6226 /* allzero.cpp */; };
+		459ADA69219BFAEA00CE6226 /* levdur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA33219BFAEA00CE6226 /* levdur.cpp */; };
+		459ADA6A219BFAEA00CE6226 /* basop32.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA34219BFAEA00CE6226 /* basop32.h */; };
+		459ADA6B219BFAEA00CE6226 /* allpole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA35219BFAEA00CE6226 /* allpole.cpp */; };
+		459ADA6C219BFAEA00CE6226 /* lsp2a.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA36219BFAEA00CE6226 /* lsp2a.cpp */; };
+		459ADA6D219BFAEA00CE6226 /* ptdec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA37219BFAEA00CE6226 /* ptdec.cpp */; };
+		459ADA6E219BFAEA00CE6226 /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA38219BFAEA00CE6226 /* utility.h */; };
+		459ADA6F219BFAEA00CE6226 /* mathutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA39219BFAEA00CE6226 /* mathutil.h */; };
+		459ADA70219BFAEA00CE6226 /* cmtables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA3A219BFAEA00CE6226 /* cmtables.cpp */; };
+		459ADA71219BFAEA00CE6226 /* memutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA3B219BFAEA00CE6226 /* memutil.cpp */; };
+		459ADA72219BFAEA00CE6226 /* utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA3C219BFAEA00CE6226 /* utility.cpp */; };
+		459ADA73219BFAEA00CE6226 /* stblzlsp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA3D219BFAEA00CE6226 /* stblzlsp.cpp */; };
+		459ADA74219BFAEB00CE6226 /* autocor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA3E219BFAEA00CE6226 /* autocor.cpp */; };
+		459ADA75219BFAEB00CE6226 /* typedef.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA3F219BFAEA00CE6226 /* typedef.h */; };
+		459ADA76219BFAEB00CE6226 /* AudioEncoderBase.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA40219BFAEA00CE6226 /* AudioEncoderBase.hpp */; };
+		459ADA77219BFAEB00CE6226 /* AudioEncoderBV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA41219BFAEA00CE6226 /* AudioEncoderBV.cpp */; };
+		459ADA85219BFB3200CE6226 /* basop32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA7B219BFB3200CE6226 /* basop32.cpp */; };
+		459ADA86219BFB3200CE6226 /* stl.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA7C219BFB3200CE6226 /* stl.h */; };
+		459ADA87219BFB3200CE6226 /* basop32.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA7D219BFB3200CE6226 /* basop32.h */; };
+		459ADA88219BFB3200CE6226 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 459ADA7E219BFB3200CE6226 /* readme.txt */; };
+		459ADA89219BFB3200CE6226 /* typedef.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA7F219BFB3200CE6226 /* typedef.h */; };
+		459ADA8A219BFB3200CE6226 /* basic_op.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA81219BFB3200CE6226 /* basic_op.h */; };
+		459ADA8B219BFB3200CE6226 /* oper_32b.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA82219BFB3200CE6226 /* oper_32b.h */; };
+		459ADA8C219BFB3200CE6226 /* oper_32b.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA83219BFB3200CE6226 /* oper_32b.cpp */; };
+		459ADA8D219BFB3200CE6226 /* typedef.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA84219BFB3200CE6226 /* typedef.h */; };
+		459ADA93219BFB5C00CE6226 /* bds_int_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA8E219BFB5C00CE6226 /* bds_int_types.h */; };
+		459ADA94219BFB5C00CE6226 /* oper_32b.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA8F219BFB5C00CE6226 /* oper_32b.h */; };
+		459ADA95219BFB5C00CE6226 /* basic_op.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA90219BFB5C00CE6226 /* basic_op.h */; };
+		459ADA96219BFB5C00CE6226 /* typedef.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA91219BFB5C00CE6226 /* typedef.h */; };
+		459ADA97219BFB5C00CE6226 /* bds_weak_ptr.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA92219BFB5C00CE6226 /* bds_weak_ptr.hpp */; };
+		459ADA9B219BFC3400CE6226 /* BVExtern.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA99219BFC3400CE6226 /* BVExtern.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459ADA9C219BFC3400CE6226 /* BVExtern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA9A219BFC3400CE6226 /* BVExtern.cpp */; };
+		459ADA9E219BFEED00CE6226 /* BVBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA9D219BFEED00CE6226 /* BVBridge.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		459AD9F2219BF9DC00CE6226 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 459AD9DE219BF9DC00CE6226 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 459AD9E6219BF9DC00CE6226;
+			remoteInfo = BV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		459AD9E7219BF9DC00CE6226 /* BV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		459AD9EA219BF9DC00CE6226 /* BV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BV.h; sourceTree = "<group>"; };
+		459AD9EB219BF9DC00CE6226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		459AD9F0219BF9DC00CE6226 /* BVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		459AD9F5219BF9DC00CE6226 /* BVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BVTests.swift; sourceTree = "<group>"; };
+		459AD9F7219BF9DC00CE6226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		459ADA0A219BFAEA00CE6226 /* AudioEncoderBV.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AudioEncoderBV.hpp; sourceTree = "<group>"; };
+		459ADA0C219BFAEA00CE6226 /* bv32strct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bv32strct.h; sourceTree = "<group>"; };
+		459ADA0D219BFAEA00CE6226 /* excdec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = excdec.cpp; sourceTree = "<group>"; };
+		459ADA0E219BFAEA00CE6226 /* lspdec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lspdec.cpp; sourceTree = "<group>"; };
+		459ADA0F219BFAEA00CE6226 /* ptquan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ptquan.cpp; sourceTree = "<group>"; };
+		459ADA10219BFAEA00CE6226 /* bvcommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bvcommon.h; sourceTree = "<group>"; };
+		459ADA11219BFAEA00CE6226 /* g192.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = g192.h; sourceTree = "<group>"; };
+		459ADA12219BFAEA00CE6226 /* encoder.cpp.bak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = encoder.cpp.bak; sourceTree = "<group>"; };
+		459ADA13219BFAEA00CE6226 /* levelest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = levelest.cpp; sourceTree = "<group>"; };
+		459ADA14219BFAEA00CE6226 /* bitpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitpack.h; sourceTree = "<group>"; };
+		459ADA15219BFAEA00CE6226 /* coarptch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = coarptch.cpp; sourceTree = "<group>"; };
+		459ADA16219BFAEA00CE6226 /* memutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memutil.h; sourceTree = "<group>"; };
+		459ADA17219BFAEA00CE6226 /* gaindec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gaindec.cpp; sourceTree = "<group>"; };
+		459ADA18219BFAEA00CE6226 /* tables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tables.cpp; sourceTree = "<group>"; };
+		459ADA19219BFAEA00CE6226 /* bv32cnst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bv32cnst.h; sourceTree = "<group>"; };
+		459ADA1A219BFAEA00CE6226 /* gainquan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gainquan.cpp; sourceTree = "<group>"; };
+		459ADA1B219BFAEA00CE6226 /* bv32externs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bv32externs.h; sourceTree = "<group>"; };
+		459ADA1C219BFAEA00CE6226 /* bitpack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bitpack.cpp; sourceTree = "<group>"; };
+		459ADA1D219BFAEA00CE6226 /* plc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plc.cpp; sourceTree = "<group>"; };
+		459ADA1E219BFAEA00CE6226 /* g192.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = g192.cpp; sourceTree = "<group>"; };
+		459ADA1F219BFAEA00CE6226 /* basop32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basop32.h; sourceTree = "<group>"; };
+		459ADA20219BFAEA00CE6226 /* lspquan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lspquan.cpp; sourceTree = "<group>"; };
+		459ADA21219BFAEA00CE6226 /* excquan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = excquan.cpp; sourceTree = "<group>"; };
+		459ADA22219BFAEA00CE6226 /* decoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = decoder.cpp; sourceTree = "<group>"; };
+		459ADA23219BFAEA00CE6226 /* preproc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = preproc.cpp; sourceTree = "<group>"; };
+		459ADA24219BFAEA00CE6226 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
+		459ADA25219BFAEA00CE6226 /* mathutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathutil.h; sourceTree = "<group>"; };
+		459ADA26219BFAEA00CE6226 /* encoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = encoder.cpp; sourceTree = "<group>"; };
+		459ADA27219BFAEA00CE6226 /* fineptch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fineptch.cpp; sourceTree = "<group>"; };
+		459ADA28219BFAEA00CE6226 /* bv32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bv32.h; sourceTree = "<group>"; };
+		459ADA29219BFAEA00CE6226 /* typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
+		459ADA2B219BFAEA00CE6226 /* a2lsp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = a2lsp.cpp; sourceTree = "<group>"; };
+		459ADA2C219BFAEA00CE6226 /* bvcommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bvcommon.h; sourceTree = "<group>"; };
+		459ADA2D219BFAEA00CE6226 /* basop32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = basop32.cpp; sourceTree = "<group>"; };
+		459ADA2E219BFAEA00CE6226 /* vqdecode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vqdecode.cpp; sourceTree = "<group>"; };
+		459ADA2F219BFAEA00CE6226 /* memutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memutil.h; sourceTree = "<group>"; };
+		459ADA30219BFAEA00CE6226 /* mathtables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mathtables.cpp; sourceTree = "<group>"; };
+		459ADA31219BFAEA00CE6226 /* mathutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mathutil.cpp; sourceTree = "<group>"; };
+		459ADA32219BFAEA00CE6226 /* allzero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = allzero.cpp; sourceTree = "<group>"; };
+		459ADA33219BFAEA00CE6226 /* levdur.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = levdur.cpp; sourceTree = "<group>"; };
+		459ADA34219BFAEA00CE6226 /* basop32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basop32.h; sourceTree = "<group>"; };
+		459ADA35219BFAEA00CE6226 /* allpole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = allpole.cpp; sourceTree = "<group>"; };
+		459ADA36219BFAEA00CE6226 /* lsp2a.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lsp2a.cpp; sourceTree = "<group>"; };
+		459ADA37219BFAEA00CE6226 /* ptdec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ptdec.cpp; sourceTree = "<group>"; };
+		459ADA38219BFAEA00CE6226 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
+		459ADA39219BFAEA00CE6226 /* mathutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathutil.h; sourceTree = "<group>"; };
+		459ADA3A219BFAEA00CE6226 /* cmtables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cmtables.cpp; sourceTree = "<group>"; };
+		459ADA3B219BFAEA00CE6226 /* memutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = memutil.cpp; sourceTree = "<group>"; };
+		459ADA3C219BFAEA00CE6226 /* utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utility.cpp; sourceTree = "<group>"; };
+		459ADA3D219BFAEA00CE6226 /* stblzlsp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stblzlsp.cpp; sourceTree = "<group>"; };
+		459ADA3E219BFAEA00CE6226 /* autocor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = autocor.cpp; sourceTree = "<group>"; };
+		459ADA3F219BFAEA00CE6226 /* typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
+		459ADA40219BFAEA00CE6226 /* AudioEncoderBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AudioEncoderBase.hpp; sourceTree = "<group>"; };
+		459ADA41219BFAEA00CE6226 /* AudioEncoderBV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioEncoderBV.cpp; sourceTree = "<group>"; };
+		459ADA7B219BFB3200CE6226 /* basop32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = basop32.cpp; sourceTree = "<group>"; };
+		459ADA7C219BFB3200CE6226 /* stl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stl.h; sourceTree = "<group>"; };
+		459ADA7D219BFB3200CE6226 /* basop32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basop32.h; sourceTree = "<group>"; };
+		459ADA7E219BFB3200CE6226 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		459ADA7F219BFB3200CE6226 /* typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
+		459ADA81219BFB3200CE6226 /* basic_op.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_op.h; sourceTree = "<group>"; };
+		459ADA82219BFB3200CE6226 /* oper_32b.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oper_32b.h; sourceTree = "<group>"; };
+		459ADA83219BFB3200CE6226 /* oper_32b.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oper_32b.cpp; sourceTree = "<group>"; };
+		459ADA84219BFB3200CE6226 /* typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
+		459ADA8E219BFB5C00CE6226 /* bds_int_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bds_int_types.h; sourceTree = "<group>"; };
+		459ADA8F219BFB5C00CE6226 /* oper_32b.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oper_32b.h; sourceTree = "<group>"; };
+		459ADA90219BFB5C00CE6226 /* basic_op.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_op.h; sourceTree = "<group>"; };
+		459ADA91219BFB5C00CE6226 /* typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
+		459ADA92219BFB5C00CE6226 /* bds_weak_ptr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bds_weak_ptr.hpp; sourceTree = "<group>"; };
+		459ADA99219BFC3400CE6226 /* BVExtern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BVExtern.h; sourceTree = "<group>"; };
+		459ADA9A219BFC3400CE6226 /* BVExtern.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BVExtern.cpp; sourceTree = "<group>"; };
+		459ADA9D219BFEED00CE6226 /* BVBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BVBridge.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		459AD9E4219BF9DC00CE6226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459AD9ED219BF9DC00CE6226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459AD9F1219BF9DC00CE6226 /* BV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		459AD9DD219BF9DC00CE6226 = {
+			isa = PBXGroup;
+			children = (
+				459ADA98219BFC0E00CE6226 /* Bridge */,
+				459AD9E9219BF9DC00CE6226 /* BV */,
+				459AD9F4219BF9DC00CE6226 /* BVTests */,
+				459AD9E8219BF9DC00CE6226 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		459AD9E8219BF9DC00CE6226 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				459AD9E7219BF9DC00CE6226 /* BV.framework */,
+				459AD9F0219BF9DC00CE6226 /* BVTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		459AD9E9219BF9DC00CE6226 /* BV */ = {
+			isa = PBXGroup;
+			children = (
+				459ADA90219BFB5C00CE6226 /* basic_op.h */,
+				459ADA8E219BFB5C00CE6226 /* bds_int_types.h */,
+				459ADA92219BFB5C00CE6226 /* bds_weak_ptr.hpp */,
+				459ADA8F219BFB5C00CE6226 /* oper_32b.h */,
+				459ADA91219BFB5C00CE6226 /* typedef.h */,
+				459ADA7A219BFB3200CE6226 /* itug191lib */,
+				459ADA80219BFB3200CE6226 /* itug729ilib */,
+				459ADA40219BFAEA00CE6226 /* AudioEncoderBase.hpp */,
+				459ADA41219BFAEA00CE6226 /* AudioEncoderBV.cpp */,
+				459ADA0A219BFAEA00CE6226 /* AudioEncoderBV.hpp */,
+				459ADA0B219BFAEA00CE6226 /* bv32 */,
+				459ADA2A219BFAEA00CE6226 /* bvcommon */,
+				459AD9EA219BF9DC00CE6226 /* BV.h */,
+				459AD9EB219BF9DC00CE6226 /* Info.plist */,
+			);
+			path = BV;
+			sourceTree = "<group>";
+		};
+		459AD9F4219BF9DC00CE6226 /* BVTests */ = {
+			isa = PBXGroup;
+			children = (
+				459AD9F5219BF9DC00CE6226 /* BVTests.swift */,
+				459AD9F7219BF9DC00CE6226 /* Info.plist */,
+			);
+			path = BVTests;
+			sourceTree = "<group>";
+		};
+		459ADA0B219BFAEA00CE6226 /* bv32 */ = {
+			isa = PBXGroup;
+			children = (
+				459ADA0C219BFAEA00CE6226 /* bv32strct.h */,
+				459ADA0D219BFAEA00CE6226 /* excdec.cpp */,
+				459ADA0E219BFAEA00CE6226 /* lspdec.cpp */,
+				459ADA0F219BFAEA00CE6226 /* ptquan.cpp */,
+				459ADA10219BFAEA00CE6226 /* bvcommon.h */,
+				459ADA11219BFAEA00CE6226 /* g192.h */,
+				459ADA12219BFAEA00CE6226 /* encoder.cpp.bak */,
+				459ADA13219BFAEA00CE6226 /* levelest.cpp */,
+				459ADA14219BFAEA00CE6226 /* bitpack.h */,
+				459ADA15219BFAEA00CE6226 /* coarptch.cpp */,
+				459ADA16219BFAEA00CE6226 /* memutil.h */,
+				459ADA17219BFAEA00CE6226 /* gaindec.cpp */,
+				459ADA18219BFAEA00CE6226 /* tables.cpp */,
+				459ADA19219BFAEA00CE6226 /* bv32cnst.h */,
+				459ADA1A219BFAEA00CE6226 /* gainquan.cpp */,
+				459ADA1B219BFAEA00CE6226 /* bv32externs.h */,
+				459ADA1C219BFAEA00CE6226 /* bitpack.cpp */,
+				459ADA1D219BFAEA00CE6226 /* plc.cpp */,
+				459ADA1E219BFAEA00CE6226 /* g192.cpp */,
+				459ADA1F219BFAEA00CE6226 /* basop32.h */,
+				459ADA20219BFAEA00CE6226 /* lspquan.cpp */,
+				459ADA21219BFAEA00CE6226 /* excquan.cpp */,
+				459ADA22219BFAEA00CE6226 /* decoder.cpp */,
+				459ADA23219BFAEA00CE6226 /* preproc.cpp */,
+				459ADA24219BFAEA00CE6226 /* utility.h */,
+				459ADA25219BFAEA00CE6226 /* mathutil.h */,
+				459ADA26219BFAEA00CE6226 /* encoder.cpp */,
+				459ADA27219BFAEA00CE6226 /* fineptch.cpp */,
+				459ADA28219BFAEA00CE6226 /* bv32.h */,
+				459ADA29219BFAEA00CE6226 /* typedef.h */,
+			);
+			path = bv32;
+			sourceTree = "<group>";
+		};
+		459ADA2A219BFAEA00CE6226 /* bvcommon */ = {
+			isa = PBXGroup;
+			children = (
+				459ADA2B219BFAEA00CE6226 /* a2lsp.cpp */,
+				459ADA2C219BFAEA00CE6226 /* bvcommon.h */,
+				459ADA2D219BFAEA00CE6226 /* basop32.cpp */,
+				459ADA2E219BFAEA00CE6226 /* vqdecode.cpp */,
+				459ADA2F219BFAEA00CE6226 /* memutil.h */,
+				459ADA30219BFAEA00CE6226 /* mathtables.cpp */,
+				459ADA31219BFAEA00CE6226 /* mathutil.cpp */,
+				459ADA32219BFAEA00CE6226 /* allzero.cpp */,
+				459ADA33219BFAEA00CE6226 /* levdur.cpp */,
+				459ADA34219BFAEA00CE6226 /* basop32.h */,
+				459ADA35219BFAEA00CE6226 /* allpole.cpp */,
+				459ADA36219BFAEA00CE6226 /* lsp2a.cpp */,
+				459ADA37219BFAEA00CE6226 /* ptdec.cpp */,
+				459ADA38219BFAEA00CE6226 /* utility.h */,
+				459ADA39219BFAEA00CE6226 /* mathutil.h */,
+				459ADA3A219BFAEA00CE6226 /* cmtables.cpp */,
+				459ADA3B219BFAEA00CE6226 /* memutil.cpp */,
+				459ADA3C219BFAEA00CE6226 /* utility.cpp */,
+				459ADA3D219BFAEA00CE6226 /* stblzlsp.cpp */,
+				459ADA3E219BFAEA00CE6226 /* autocor.cpp */,
+				459ADA3F219BFAEA00CE6226 /* typedef.h */,
+			);
+			path = bvcommon;
+			sourceTree = "<group>";
+		};
+		459ADA7A219BFB3200CE6226 /* itug191lib */ = {
+			isa = PBXGroup;
+			children = (
+				459ADA7B219BFB3200CE6226 /* basop32.cpp */,
+				459ADA7C219BFB3200CE6226 /* stl.h */,
+				459ADA7D219BFB3200CE6226 /* basop32.h */,
+				459ADA7E219BFB3200CE6226 /* readme.txt */,
+				459ADA7F219BFB3200CE6226 /* typedef.h */,
+			);
+			path = itug191lib;
+			sourceTree = "<group>";
+		};
+		459ADA80219BFB3200CE6226 /* itug729ilib */ = {
+			isa = PBXGroup;
+			children = (
+				459ADA81219BFB3200CE6226 /* basic_op.h */,
+				459ADA82219BFB3200CE6226 /* oper_32b.h */,
+				459ADA83219BFB3200CE6226 /* oper_32b.cpp */,
+				459ADA84219BFB3200CE6226 /* typedef.h */,
+			);
+			path = itug729ilib;
+			sourceTree = "<group>";
+		};
+		459ADA98219BFC0E00CE6226 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				459ADA99219BFC3400CE6226 /* BVExtern.h */,
+				459ADA9A219BFC3400CE6226 /* BVExtern.cpp */,
+				459ADA9D219BFEED00CE6226 /* BVBridge.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		459AD9E2219BF9DC00CE6226 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459ADA86219BFB3200CE6226 /* stl.h in Headers */,
+				459ADA9B219BFC3400CE6226 /* BVExtern.h in Headers */,
+				459ADA75219BFAEB00CE6226 /* typedef.h in Headers */,
+				459ADA5F219BFAEA00CE6226 /* bv32.h in Headers */,
+				459ADA8A219BFB3200CE6226 /* basic_op.h in Headers */,
+				459ADA48219BFAEA00CE6226 /* g192.h in Headers */,
+				459ADA43219BFAEA00CE6226 /* bv32strct.h in Headers */,
+				459ADA52219BFAEA00CE6226 /* bv32externs.h in Headers */,
+				459ADA76219BFAEB00CE6226 /* AudioEncoderBase.hpp in Headers */,
+				459ADA96219BFB5C00CE6226 /* typedef.h in Headers */,
+				459ADA8D219BFB3200CE6226 /* typedef.h in Headers */,
+				459ADA6A219BFAEA00CE6226 /* basop32.h in Headers */,
+				459ADA89219BFB3200CE6226 /* typedef.h in Headers */,
+				459ADA5B219BFAEA00CE6226 /* utility.h in Headers */,
+				459ADA94219BFB5C00CE6226 /* oper_32b.h in Headers */,
+				459ADA5C219BFAEA00CE6226 /* mathutil.h in Headers */,
+				459ADA47219BFAEA00CE6226 /* bvcommon.h in Headers */,
+				459ADA42219BFAEA00CE6226 /* AudioEncoderBV.hpp in Headers */,
+				459ADA56219BFAEA00CE6226 /* basop32.h in Headers */,
+				459ADA93219BFB5C00CE6226 /* bds_int_types.h in Headers */,
+				459ADA6F219BFAEA00CE6226 /* mathutil.h in Headers */,
+				459AD9F8219BF9DC00CE6226 /* BV.h in Headers */,
+				459ADA50219BFAEA00CE6226 /* bv32cnst.h in Headers */,
+				459ADA62219BFAEA00CE6226 /* bvcommon.h in Headers */,
+				459ADA65219BFAEA00CE6226 /* memutil.h in Headers */,
+				459ADA4B219BFAEA00CE6226 /* bitpack.h in Headers */,
+				459ADA87219BFB3200CE6226 /* basop32.h in Headers */,
+				459ADA6E219BFAEA00CE6226 /* utility.h in Headers */,
+				459ADA97219BFB5C00CE6226 /* bds_weak_ptr.hpp in Headers */,
+				459ADA60219BFAEA00CE6226 /* typedef.h in Headers */,
+				459ADA8B219BFB3200CE6226 /* oper_32b.h in Headers */,
+				459ADA95219BFB5C00CE6226 /* basic_op.h in Headers */,
+				459ADA4D219BFAEA00CE6226 /* memutil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		459AD9E6219BF9DC00CE6226 /* BV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 459AD9FB219BF9DC00CE6226 /* Build configuration list for PBXNativeTarget "BV" */;
+			buildPhases = (
+				459AD9E2219BF9DC00CE6226 /* Headers */,
+				459AD9E3219BF9DC00CE6226 /* Sources */,
+				459AD9E4219BF9DC00CE6226 /* Frameworks */,
+				459AD9E5219BF9DC00CE6226 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BV;
+			productName = BV;
+			productReference = 459AD9E7219BF9DC00CE6226 /* BV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		459AD9EF219BF9DC00CE6226 /* BVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 459AD9FE219BF9DC00CE6226 /* Build configuration list for PBXNativeTarget "BVTests" */;
+			buildPhases = (
+				459AD9EC219BF9DC00CE6226 /* Sources */,
+				459AD9ED219BF9DC00CE6226 /* Frameworks */,
+				459AD9EE219BF9DC00CE6226 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				459AD9F3219BF9DC00CE6226 /* PBXTargetDependency */,
+			);
+			name = BVTests;
+			productName = BVTests;
+			productReference = 459AD9F0219BF9DC00CE6226 /* BVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		459AD9DE219BF9DC00CE6226 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Wenbo,Hu";
+				TargetAttributes = {
+					459AD9E6219BF9DC00CE6226 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					459AD9EF219BF9DC00CE6226 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 459AD9E1219BF9DC00CE6226 /* Build configuration list for PBXProject "BV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 459AD9DD219BF9DC00CE6226;
+			productRefGroup = 459AD9E8219BF9DC00CE6226 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				459AD9E6219BF9DC00CE6226 /* BV */,
+				459AD9EF219BF9DC00CE6226 /* BVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		459AD9E5219BF9DC00CE6226 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459ADA88219BFB3200CE6226 /* readme.txt in Resources */,
+				459ADA49219BFAEA00CE6226 /* encoder.cpp.bak in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459AD9EE219BF9DC00CE6226 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		459AD9E3219BF9DC00CE6226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459ADA9E219BFEED00CE6226 /* BVBridge.swift in Sources */,
+				459ADA6C219BFAEA00CE6226 /* lsp2a.cpp in Sources */,
+				459ADA68219BFAEA00CE6226 /* allzero.cpp in Sources */,
+				459ADA61219BFAEA00CE6226 /* a2lsp.cpp in Sources */,
+				459ADA57219BFAEA00CE6226 /* lspquan.cpp in Sources */,
+				459ADA45219BFAEA00CE6226 /* lspdec.cpp in Sources */,
+				459ADA51219BFAEA00CE6226 /* gainquan.cpp in Sources */,
+				459ADA72219BFAEA00CE6226 /* utility.cpp in Sources */,
+				459ADA69219BFAEA00CE6226 /* levdur.cpp in Sources */,
+				459ADA6B219BFAEA00CE6226 /* allpole.cpp in Sources */,
+				459ADA64219BFAEA00CE6226 /* vqdecode.cpp in Sources */,
+				459ADA5A219BFAEA00CE6226 /* preproc.cpp in Sources */,
+				459ADA4F219BFAEA00CE6226 /* tables.cpp in Sources */,
+				459ADA4C219BFAEA00CE6226 /* coarptch.cpp in Sources */,
+				459ADA77219BFAEB00CE6226 /* AudioEncoderBV.cpp in Sources */,
+				459ADA4A219BFAEA00CE6226 /* levelest.cpp in Sources */,
+				459ADA63219BFAEA00CE6226 /* basop32.cpp in Sources */,
+				459ADA58219BFAEA00CE6226 /* excquan.cpp in Sources */,
+				459ADA67219BFAEA00CE6226 /* mathutil.cpp in Sources */,
+				459ADA85219BFB3200CE6226 /* basop32.cpp in Sources */,
+				459ADA44219BFAEA00CE6226 /* excdec.cpp in Sources */,
+				459ADA46219BFAEA00CE6226 /* ptquan.cpp in Sources */,
+				459ADA54219BFAEA00CE6226 /* plc.cpp in Sources */,
+				459ADA73219BFAEA00CE6226 /* stblzlsp.cpp in Sources */,
+				459ADA4E219BFAEA00CE6226 /* gaindec.cpp in Sources */,
+				459ADA70219BFAEA00CE6226 /* cmtables.cpp in Sources */,
+				459ADA66219BFAEA00CE6226 /* mathtables.cpp in Sources */,
+				459ADA5D219BFAEA00CE6226 /* encoder.cpp in Sources */,
+				459ADA74219BFAEB00CE6226 /* autocor.cpp in Sources */,
+				459ADA53219BFAEA00CE6226 /* bitpack.cpp in Sources */,
+				459ADA9C219BFC3400CE6226 /* BVExtern.cpp in Sources */,
+				459ADA59219BFAEA00CE6226 /* decoder.cpp in Sources */,
+				459ADA8C219BFB3200CE6226 /* oper_32b.cpp in Sources */,
+				459ADA55219BFAEA00CE6226 /* g192.cpp in Sources */,
+				459ADA6D219BFAEA00CE6226 /* ptdec.cpp in Sources */,
+				459ADA71219BFAEA00CE6226 /* memutil.cpp in Sources */,
+				459ADA5E219BFAEA00CE6226 /* fineptch.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		459AD9EC219BF9DC00CE6226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459AD9F6219BF9DC00CE6226 /* BVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		459AD9F3219BF9DC00CE6226 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 459AD9E6219BF9DC00CE6226 /* BV */;
+			targetProxy = 459AD9F2219BF9DC00CE6226 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		459AD9F9219BF9DC00CE6226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		459AD9FA219BF9DC00CE6226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		459AD9FC219BF9DC00CE6226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumi.BV;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		459AD9FD219BF9DC00CE6226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumi.BV;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		459AD9FF219BF9DC00CE6226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumi.BVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		459ADA00219BF9DC00CE6226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumi.BVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		459AD9E1219BF9DC00CE6226 /* Build configuration list for PBXProject "BV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				459AD9F9219BF9DC00CE6226 /* Debug */,
+				459AD9FA219BF9DC00CE6226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		459AD9FB219BF9DC00CE6226 /* Build configuration list for PBXNativeTarget "BV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				459AD9FC219BF9DC00CE6226 /* Debug */,
+				459AD9FD219BF9DC00CE6226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		459AD9FE219BF9DC00CE6226 /* Build configuration list for PBXNativeTarget "BVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				459AD9FF219BF9DC00CE6226 /* Debug */,
+				459ADA00219BF9DC00CE6226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 459AD9DE219BF9DC00CE6226 /* Project object */;
+}
