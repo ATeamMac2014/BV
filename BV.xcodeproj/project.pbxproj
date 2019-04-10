@@ -80,7 +80,7 @@
 		459ADA97219BFB5C00CE6226 /* bds_weak_ptr.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA92219BFB5C00CE6226 /* bds_weak_ptr.hpp */; };
 		459ADA9B219BFC3400CE6226 /* BVExtern.h in Headers */ = {isa = PBXBuildFile; fileRef = 459ADA99219BFC3400CE6226 /* BVExtern.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		459ADA9C219BFC3400CE6226 /* BVExtern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA9A219BFC3400CE6226 /* BVExtern.cpp */; };
-		459ADA9E219BFEED00CE6226 /* BVBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA9D219BFEED00CE6226 /* BVBridge.swift */; };
+		459ADA9E219BFEED00CE6226 /* PCMEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459ADA9D219BFEED00CE6226 /* PCMEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,7 +170,7 @@
 		459ADA92219BFB5C00CE6226 /* bds_weak_ptr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bds_weak_ptr.hpp; sourceTree = "<group>"; };
 		459ADA99219BFC3400CE6226 /* BVExtern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BVExtern.h; sourceTree = "<group>"; };
 		459ADA9A219BFC3400CE6226 /* BVExtern.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BVExtern.cpp; sourceTree = "<group>"; };
-		459ADA9D219BFEED00CE6226 /* BVBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BVBridge.swift; sourceTree = "<group>"; };
+		459ADA9D219BFEED00CE6226 /* PCMEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCMEncoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,7 +334,7 @@
 			children = (
 				459ADA99219BFC3400CE6226 /* BVExtern.h */,
 				459ADA9A219BFC3400CE6226 /* BVExtern.cpp */,
-				459ADA9D219BFEED00CE6226 /* BVBridge.swift */,
+				459ADA9D219BFEED00CE6226 /* PCMEncoder.swift */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -482,7 +482,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				459ADA9E219BFEED00CE6226 /* BVBridge.swift in Sources */,
+				459ADA9E219BFEED00CE6226 /* PCMEncoder.swift in Sources */,
 				459ADA6C219BFAEA00CE6226 /* lsp2a.cpp in Sources */,
 				459ADA68219BFAEA00CE6226 /* allzero.cpp in Sources */,
 				459ADA61219BFAEA00CE6226 /* a2lsp.cpp in Sources */,
@@ -675,7 +675,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -703,7 +703,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

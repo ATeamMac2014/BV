@@ -17,6 +17,7 @@ typedef void* BVEncoder;
 #ifdef __cplusplus
 extern "C"{
 #endif
+    
     //在这里写上c的代码
     BVEncoder initBV(int rate);
     int encodeData(BVEncoder encoder,const uint8_t* src_pcm, int src_len, uint8_t* dest_encoded, int dest_len);
